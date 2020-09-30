@@ -1,0 +1,37 @@
+{
+  "name": "@dn-l/react-bootstrap-toggle",
+  "version": "0.0.0",
+  "description": "React toggle component based on Bootstrap 4",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "build": "tsc && terser dist/index.js --output dist/index.min.js",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dn-l/react-bootstrap-toggle.git"
+  },
+  "keywords": [
+    "react",
+    "bootstrap",
+    "toggle"
+  ],
+  "author": "Dan Lilienblum <dlilienblum@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dn-l/react-bootstrap-toggle/issues"
+  },
+  "homepage": "https://github.com/dn-l/react-bootstrap-toggle#readme",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.49",
+    "@types/react-dom": "^16.9.0",
+    "terser": "^5.3.3",
+    "typescript": "^4.0.3"
+  }
+}

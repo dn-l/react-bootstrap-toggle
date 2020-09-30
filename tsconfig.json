@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "lib": ["dom", "ES6"],
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "strict": true,
+    "target": "ES5"
+  }
+}
