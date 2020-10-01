@@ -90,9 +90,7 @@ function Toggle({
       onClick={onClick}
     >
       <span
-        className={`text-nowrap ${
-          enableTransition ? "transition-transform" : ""
-        }`}
+        className={`text-nowrap ${enableTransition ? "animate" : ""}`}
         style={styles.container}
       >
         <span

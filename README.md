@@ -23,7 +23,7 @@ yarn add @dn-l/react-bootstrap-toggle
 @import "~bootstrap/scss/_variables";
 
 .bootstrap-toggle {
-  .transition-transform {
+  .animate {
     transition: $transition-base;
   }
 
