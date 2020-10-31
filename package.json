@@ -25,13 +25,11 @@
   },
   "homepage": "https://github.com/dn-l/react-bootstrap-toggle#readme",
   "devDependencies": {
-    "@types/react": "^16.9.49",
-    "@types/react-dom": "^16.9.8",
-    "terser": "^5.3.3",
-    "typescript": "^4.0.3"
+    "@types/react": ">=16.0.0",
+    "terser": "^5.3.8",
+    "typescript": "^4.0.5"
   },
-  "dependencies": {
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+  "peerDependencies": {
+    "react": ">=16.0.0"
   }
 }
