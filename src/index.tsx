@@ -34,13 +34,14 @@ function Toggle({
   onVariant = BootstrapBtnVariant.Primary,
   offVariant = BootstrapBtnVariant.Light,
 }: Props) {
-  const [enableTransition, setEnableTransition] = useState<boolean>(false);
+  const [enableTransition, setEnableTransition] = useState(false);
   const [checked, setChecked] = useState<boolean>(value);
   const onCaptionRef = useRef<HTMLSpanElement>(null);
   const offCaptionRef = useRef<HTMLSpanElement>(null);
   const [width, setWidth] = useState<number>();
   useEffect(() => {
-    setTimeout(() => setEnableTransition(true));
+    const timer = setTimeout(() => setEnableTransition(true), 300);
+    return () => clearTimeout(timer);
   }, [setEnableTransition]);
   useEffect(() => {
     const newWidth = Math.max.apply(
